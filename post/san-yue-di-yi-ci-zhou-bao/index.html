@@ -7,7 +7,7 @@
 <meta name="description" content="Coding Changes the World!">
 <meta name="theme-color" content="#000">
 <title>三月第一次周报 | Wuyifan&#39;s Blog</title>
-<link rel="shortcut icon" href="https://wuyifan2233.github.io//favicon.ico?v=1583723997321">
+<link rel="shortcut icon" href="https://wuyifan2233.github.io//favicon.ico?v=1583724142984">
 <link rel="stylesheet" href="https://wuyifan2233.github.io//styles/main.css">
 
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -490,7 +490,6 @@ window.addEventListener('load', function() {
 <h1 id="yolo的分析">Yolo的分析</h1>
 <p>YOLO算法的基本思想是：首先通过特征提取网络对输入特征提取特征，得到特定大小的特征图输出。输入图像分成13×13的grid cell，接着如果真实框中某个object的中心坐标落在某个grid cell中，那么就由该grid cell来预测该object。每个object有固定数量的bounding box，YOLO v3中有三个bounding box，使用逻辑回归确定用来预测的回归框。<br>
 Yolo系列里，作者只在v1的论文里给出了结构图，而v2和v3的论文里没有给出结构图。我上网查了一份。YOLO3借鉴了残差网络结构，形成更深的网络层次，以及多尺度检测，提升了mAP及小物体检测效果。但有些细节部分还是没看明白，下周再查查资料扫清疑惑。另外还得复现一下YOLO v3。</p>
-<!-- more -->
 
               </div>
               <div class="post-footer">

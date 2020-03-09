@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wuyifan2233.github.io/</id>
     <title>Wuyifan&apos;s Blog</title>
-    <updated>2020-03-09T03:20:18.698Z</updated>
+    <updated>2020-03-09T03:22:33.188Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wuyifan2233.github.io/"/>
     <link rel="self" href="https://wuyifan2233.github.io/atom.xml"/>
@@ -29,25 +29,6 @@
         <link href="https://wuyifan2233.github.io/post/san-yue-di-yi-ci-zhou-bao/">
         </link>
         <updated>2020-03-09T03:05:17.000Z</updated>
-        <summary type="html"><![CDATA[<h1 id="本周所做的事情">本周所做的事情</h1>
-<p>1把 pytorch课程又重新看了一遍，这门课在寒假已经看了一遍了，但在实际过程中还是要反复回头去看一些知识点。<br>
-2复现 AlexNet ,VGG, ResNet, GoogleNet的网络框架并比较了其优劣。<br>
-3看 Yolo和SSD相关的源码和论文。<br>
-4复习了 Markdown语言并用github pages搭建了自己的博客，长期记录学习。</p>
-<h1 id="本周需要注意的知识点">本周需要注意的知识点</h1>
-<p>深入理解Batch Normalization批标准化<br>
-有个很重要的假设IID独立同分布假设，就是假设训练数据和测试数据是满足相同分布的，这是通过训练数据获得的模型能够在测试集获得好的效果的一个基本保障。 Batch Normalization就是在深度神经网络训练过程中使每一层神经网络的输入保持相同分布的。</p>
-<h1 id="易混淆的概念">易混淆的概念</h1>
-<p>在写代码的过程中总是被这几个单词弄混，这里特意再标注一下:<br>
-1 data numbers数据量:训练使用的总数量比如数据一共包含64万张图片那么总数据量就是64万<br>
-2.batchsize批量大小:每次输入到网络的数据量，比如一次输入网络64张图片则 batchsize＝64<br>
-3.steps选代次数:网络学习完所有数据需要的次数，比如 batchsize＝64，那么过完所有数据需要网络代一万次， steps＝10000，即数据量批大小选代次数<br>
-4.iteration选代:一批样本输入到模型中，称为一个 interaction。选代是重复反馈的动作神经网络中我们希望通过迭代进行多次的训练以达到所需的目标或结果。每一次迭代得到的结果都会被作为下一次迭代的初始值。一个代一个正向通过＋一个反向通过。<br>
-5.epoch时期:当一个完整的数据集通过了神经网络一次并且返回了一次，称为一个epoch。值得注意的是，steps和interaction和是同一意思，每运行一个step，更新一次参数权重，进行一次学习，每一次更新参数需要 batchsize个样本进行运算学习，根据运算学习调整一次参数。</p>
-<h1 id="yolo的分析">Yolo的分析</h1>
-<p>YOLO算法的基本思想是：首先通过特征提取网络对输入特征提取特征，得到特定大小的特征图输出。输入图像分成13×13的grid cell，接着如果真实框中某个object的中心坐标落在某个grid cell中，那么就由该grid cell来预测该object。每个object有固定数量的bounding box，YOLO v3中有三个bounding box，使用逻辑回归确定用来预测的回归框。<br>
-Yolo系列里，作者只在v1的论文里给出了结构图，而v2和v3的论文里没有给出结构图。我上网查了一份。YOLO3借鉴了残差网络结构，形成更深的网络层次，以及多尺度检测，提升了mAP及小物体检测效果。但有些细节部分还是没看明白，下周再查查资料扫清疑惑。另外还得复现一下YOLO v3。</p>
-]]></summary>
         <content type="html"><![CDATA[<h1 id="本周所做的事情">本周所做的事情</h1>
 <p>1把 pytorch课程又重新看了一遍，这门课在寒假已经看了一遍了，但在实际过程中还是要反复回头去看一些知识点。<br>
 2复现 AlexNet ,VGG, ResNet, GoogleNet的网络框架并比较了其优劣。<br>
@@ -66,7 +47,6 @@ Yolo系列里，作者只在v1的论文里给出了结构图，而v2和v3的论�
 <h1 id="yolo的分析">Yolo的分析</h1>
 <p>YOLO算法的基本思想是：首先通过特征提取网络对输入特征提取特征，得到特定大小的特征图输出。输入图像分成13×13的grid cell，接着如果真实框中某个object的中心坐标落在某个grid cell中，那么就由该grid cell来预测该object。每个object有固定数量的bounding box，YOLO v3中有三个bounding box，使用逻辑回归确定用来预测的回归框。<br>
 Yolo系列里，作者只在v1的论文里给出了结构图，而v2和v3的论文里没有给出结构图。我上网查了一份。YOLO3借鉴了残差网络结构，形成更深的网络层次，以及多尺度检测，提升了mAP及小物体检测效果。但有些细节部分还是没看明白，下周再查查资料扫清疑惑。另外还得复现一下YOLO v3。</p>
-<!-- more -->
 ]]></content>
     </entry>
 </feed>
